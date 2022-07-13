@@ -1,0 +1,267 @@
+@charset "UTF-8";
+/*Fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Zetta&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Devanagari&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
+/*Null style*/
+/*Clean styles*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: -1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul, li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*Styles*/
+.body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  background-color: #0B0B0B;
+  color: #FFFFFF;
+  line-height: 24px;
+}
+
+.wrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.header__body {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 25px;
+  line-height: 24px;
+}
+.header__logo {
+  font-family: "Lexend Zetta", sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.header__nav {
+  display: none;
+}
+
+.nav__body {
+  display: flex;
+  align-items: center;
+}
+.nav__item {
+  margin: 0 27px;
+  font-family: "IBM Plex Sans Devanagari", sans-serif;
+  opacity: 0.7;
+}
+
+.intro__body {
+  padding: 150px 5% 0 5%;
+  margin-bottom: 100px;
+}
+.intro__header {
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 32px;
+}
+
+.info-slider__body {
+  height: 300px;
+  background-color: #51026C;
+  margin-bottom: 35px;
+}
+
+.main-content {
+  flex: 0 1 auto;
+}
+.main-content__body {
+  display: flex;
+  flex-direction: column;
+}
+
+.services__body {
+  padding: 7%;
+}
+.services__title-main {
+  font-size: 33px;
+}
+.services__button {
+  margin: 10% 0 10% 0;
+}
+
+.service__body {
+  margin: 12% 0;
+}
+.service__title {
+  font-size: 24px;
+  line-height: 36px;
+}
+.service__info {
+  width: 100%;
+  border: 3px solid #51026C;
+  -o-border-image: linear-gradient(90deg, #300ED2 10%, #D501FF 90%);
+     border-image: linear-gradient(90deg, #300ED2 10%, #D501FF 90%);
+  border-image-slice: 1;
+  border-radius: 2%;
+  padding: 8%;
+}
+.service__list {
+  margin: 10% 0;
+  opacity: 0.8;
+  line-height: 24px;
+}
+.service__item {
+  margin: 6% 6%;
+}
+.service__item::before {
+  content: "–";
+  position: relative;
+  left: -5px;
+}
+.service__button {
+  margin-top: 10%;
+}
+.service__img-block {
+  width: 50%;
+  display: none;
+}
+
+.summary__body {
+  background-color: #F4F4F4;
+  color: #0E0E0E;
+}
+.summary__info {
+  padding: 15% 5%;
+}
+.summary__title {
+  font-size: 33px;
+  font-weight: 700;
+  margin-bottom: 10%;
+}
+.summary__button {
+  margin-top: 10%;
+}
+.summary__img-block {
+  display: none;
+}
+
+.about-us__body {
+  background-color: #F4F4F4;
+  color: #0E0E0E;
+  padding: 15% 5%;
+}
+
+.achivements__body {
+  background-color: #F4F4F4;
+  color: #0E0E0E;
+  padding: 15% 5%;
+}
+.achivements__blocks {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.achivement__title-img {
+  margin: 15% 0;
+}
+.footer__body {
+  display: flex;
+  flex-wrap: wrap;
+}
+.title {
+  font-size: 33px;
+  font-weight: 700;
+  margin-bottom: 10%;
+  line-height: 46px;
+}
+
+.button {
+  border: 3px solid #51026C;
+  -o-border-image: linear-gradient(90deg, #300ED2 10%, #D501FF 90%);
+     border-image: linear-gradient(90deg, #300ED2 10%, #D501FF 90%);
+  border-image-slice: 1;
+  border-radius: 5%;
+  color: #FFFFFF;
+  background-color: #0B0B0B;
+  padding: 14px 32px;
+  font-size: 14px;
+  font-weight: 600;
+  opacity: 1;
+}
+
+.button-filled {
+  -o-border-image: linear-gradient(90deg, #300ED2 10%, #D501FF 90%);
+     border-image: linear-gradient(90deg, #300ED2 10%, #D501FF 90%);
+  border-image-slice: 1;
+  border-radius: 5%;
+  color: #FFFFFF;
+  background-image: linear-gradient(90deg, #300ED2 10%, #D501FF 90%);
+  padding: 17px 35px;
+  font-size: 14px;
+  font-weight: 600;
+  opacity: 1;
+}

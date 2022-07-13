@@ -1,0 +1,235 @@
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Zetta&display=swap');
+//font-family: 'Lexend Zetta', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Devanagari&display=swap');
+//font-family: 'IBM Plex Sans Devanagari', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+//font-family: 'Open Sans', sans-serif;
+/*Null style*/
+@import "nullstyle";
+/*Styles*/
+//___________Variables___________
+$fn-sz: 16px;
+$fn-sz-big: 24px;
+$title-big-sz: 56px;
+$title-mid-sz: 24px;
+
+$fn-sz-mobile: 12px;
+$fn-sz-big-mobile: 20px;
+$title-big-sz-mobile: 33px;
+$title-mid-sz-mobile: 24px;
+
+$main-color:#0B0B0B;
+$font-color: #FFFFFF;
+//___________Classes___________
+.body{
+   font-family: 'Open Sans', sans-serif;
+   font-size: $fn-sz-mobile;
+   background-color: $main-color;
+   color: $font-color;
+   line-height: 24px;
+}
+.wrapper{
+   height: 100%;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+}
+.header{
+   &__body{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 25px;
+      line-height: 24px;
+   }
+   &__logo{
+      font-family: 'Lexend Zetta', sans-serif;
+      font-size: 16px;
+      text-transform: uppercase;
+   }
+   &__nav{
+      display: none;
+   }
+}
+.nav{
+   &__body{
+      display: flex;
+      align-items: center;
+   }
+   &__item{
+      margin: 0 27px;
+      font-family: 'IBM Plex Sans Devanagari', sans-serif;
+      opacity: 0.7;
+   }
+}
+.intro{
+   &__body{
+      padding: 150px 5% 0 5%;
+      margin-bottom: 100px;
+   }
+   &__header{
+      font-size: 15px;
+      font-weight: 700;
+      margin-bottom: 32px;
+   }
+}
+.info-slider{
+   &__body{
+      height: 300px;
+      background-color: #51026C;
+      margin-bottom: 35px;
+   }
+}
+.main-content{
+   flex: 0 1 auto;
+   &__body{
+      display: flex;
+      flex-direction: column;
+   }
+}
+.services{
+   &__body{
+      padding: 7%;
+   }
+   &__title-main{
+      font-size: $title-big-sz-mobile;
+   }
+   &__blocks{
+   }
+   &__button{
+      margin: 10% 0 10% 0;
+   }
+}
+.service{
+   &__body{
+      margin: 12% 0;
+   }
+   &__title{
+      font-size: $title-mid-sz-mobile;
+      line-height: 36px;
+   }
+   &__info{
+      width: 100%;
+      border: 3px solid #51026C;
+      border-image: linear-gradient(90deg, #300ED2 10%, #D501FF 90%);;
+      border-image-slice: 1;
+      border-radius: 2%;
+      padding: 8%;
+   }
+   &__list{
+      margin: 10% 0;
+      opacity: 0.8;
+      line-height: 24px;
+   }
+   &__item{
+      margin: 6% 6%;
+      &::before{
+         content: "–";
+         position: relative;
+         left: -5px;
+      }
+   }
+   &__button{
+      margin-top: 10%;
+   }
+   &__img-block{
+      width: 50%;
+      display: none;
+   }
+}
+.summary{
+   &__body{
+      background-color: #F4F4F4;
+      color: #0E0E0E;
+   }
+   &__info{
+      padding: 15% 5%;
+   }
+   &__title{
+      font-size: 33px;
+      font-weight: 700;
+      margin-bottom: 10%;
+   }
+   &__button{
+      margin-top: 10%;
+   }
+   &__img{
+
+   }
+   &__img-block{
+      display: none;
+   }
+}
+.about-us{
+   &__body{
+      background-color: #F4F4F4;
+      color: #0E0E0E;
+      padding: 15% 5%;
+   }
+}
+.achivements{
+   &__body{
+      background-color: #F4F4F4;
+      color: #0E0E0E;
+      padding: 15% 5%;
+   }
+   &__blocks{
+      display: flex;
+      flex-wrap: wrap;
+   }
+}
+
+.achivement{
+   &__title-img{
+      margin: 15% 0;
+   }
+   &__desc{}
+}
+.footer{
+   &__body{
+      display: flex;
+      flex-wrap: wrap;
+   }
+   &__corporate{}
+   &__desc{}
+   &__icon{}
+   &__item{}
+   &__list{}
+   &__services{}
+   &__social{}
+   &__socials{}
+   &__title{}
+   &__title-small{}
+}
+
+.title{
+   font-size: 33px;
+   font-weight: 700;
+   margin-bottom: 10%;
+   line-height: 46px;
+}
+.button{
+   border: 3px solid #51026C;
+   border-image: linear-gradient(90deg, #300ED2 10%, #D501FF 90%);;
+   border-image-slice: 1;
+   border-radius: 5%;
+   color: $font-color;
+   background-color: $main-color;
+   padding: 14px 32px;
+   font-size: 14px;
+   font-weight: 600;
+   opacity: 1;
+}
+.button-filled{
+   border-image: linear-gradient(90deg, #300ED2 10%, #D501FF 90%);;
+   border-image-slice: 1;
+   border-radius: 5%;
+   color: $font-color;
+   background-image:linear-gradient(90deg, #300ED2 10%, #D501FF 90%);;
+   padding: 17px 35px;
+   font-size: 14px;
+   font-weight: 600;
+   opacity: 1;
+}
