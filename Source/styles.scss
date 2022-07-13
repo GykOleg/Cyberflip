@@ -14,10 +14,10 @@ $fn-sz-big: 24px;
 $title-big-sz: 56px;
 $title-mid-sz: 24px;
 
-$fn-sz-mobile: 12px;
-$fn-sz-big-mobile: 20px;
+$fn-sz-mobile: 16px;
+$fn-sz-big-mobile: 18px;
 $title-big-sz-mobile: 33px;
-$title-mid-sz-mobile: 24px;
+$title-mid-sz-mobile: 20px;
 
 $main-color:#0B0B0B;
 $font-color: #FFFFFF;
@@ -65,20 +65,31 @@ $font-color: #FFFFFF;
    }
 }
 .intro{
+   background-image: url("../IMG/wave.svg");
+   background-repeat: no-repeat;
+   background-size:cover;
+   background-position: left;
    &__body{
-      padding: 150px 5% 0 5%;
-      margin-bottom: 100px;
+      padding: 150px 7% 150px 7%;
+      //background-position: center;
+   }
+   &__line{
+      margin: 15px 0;
+      height: 2px;
+      width: 50%;
+      background-image:linear-gradient(90deg, #300ED2 10%, #D501FF 90%);;
+      background-size: cover;
    }
    &__header{
-      font-size: 15px;
+      font-size: 25px;
+      line-height: 40px;
       font-weight: 700;
-      margin-bottom: 32px;
    }
 }
-.info-slider{
+.intro-slider{
    &__body{
       height: 300px;
-      background-color: #51026C;
+      background-image:linear-gradient(90deg, #06050000 10%, #51026C 90%);;
       margin-bottom: 35px;
    }
 }
@@ -95,11 +106,10 @@ $font-color: #FFFFFF;
    }
    &__title-main{
       font-size: $title-big-sz-mobile;
-   }
-   &__blocks{
+      font-weight: 700;
    }
    &__button{
-      margin: 10% 0 10% 0;
+      margin: 20% 0 12% 0;
    }
 }
 .service{
@@ -108,6 +118,7 @@ $font-color: #FFFFFF;
    }
    &__title{
       font-size: $title-mid-sz-mobile;
+      font-weight: 700;
       line-height: 36px;
    }
    &__info{
@@ -119,7 +130,7 @@ $font-color: #FFFFFF;
       padding: 8%;
    }
    &__list{
-      margin: 10% 0;
+      padding: 2%;
       opacity: 0.8;
       line-height: 24px;
    }
@@ -127,12 +138,14 @@ $font-color: #FFFFFF;
       margin: 6% 6%;
       &::before{
          content: "–";
-         position: relative;
-         left: -5px;
+         display: inline-block;
+         width: 15px;
+         margin-left: -15px;
       }
    }
    &__button{
       margin-top: 10%;
+      font-size: 14px;
    }
    &__img-block{
       width: 50%;
@@ -148,7 +161,7 @@ $font-color: #FFFFFF;
       padding: 15% 5%;
    }
    &__title{
-      font-size: 33px;
+      font-size: $title-big-sz-mobile;
       font-weight: 700;
       margin-bottom: 10%;
    }
@@ -180,10 +193,13 @@ $font-color: #FFFFFF;
       flex-wrap: wrap;
    }
 }
-
 .achivement{
+   &__body{
+      margin: 0 auto;
+      text-align: center;
+   }
    &__title-img{
-      margin: 15% 0;
+      margin: 10% 0;
    }
    &__desc{}
 }
@@ -191,21 +207,41 @@ $font-color: #FFFFFF;
    &__body{
       display: flex;
       flex-wrap: wrap;
+      padding: 7%;
+   }
+   &__title{
+      font-family: 'Lexend Zetta', sans-serif;
+      font-size: 20px;
+      margin-bottom: 15px;
+   }
+   &__desc{}
+   &__social{}
+   &__socials{}
+   &__icon-button{
+      background-color: $main-color;
+      border: 3px solid #51026C;
+      border-image: linear-gradient(90deg, #300ED2 10%, #D501FF 90%);;
+      border-image-slice: 1;
+      border-radius: 10px;
+      padding: 3%;
    }
    &__corporate{}
-   &__desc{}
    &__icon{}
    &__item{}
    &__list{}
    &__services{}
-   &__social{}
-   &__socials{}
-   &__title{}
    &__title-small{}
+   &__place{
+      width: 100%;
+      line-height: 30px;
+   }
+   &__contact{
+      margin-top: 15px;
+   }
 }
 
 .title{
-   font-size: 33px;
+   font-size: $title-big-sz-mobile;
    font-weight: 700;
    margin-bottom: 10%;
    line-height: 46px;
@@ -223,13 +259,17 @@ $font-color: #FFFFFF;
    opacity: 1;
 }
 .button-filled{
-   border-image: linear-gradient(90deg, #300ED2 10%, #D501FF 90%);;
-   border-image-slice: 1;
    border-radius: 5%;
-   color: $font-color;
    background-image:linear-gradient(90deg, #300ED2 10%, #D501FF 90%);;
    padding: 17px 35px;
+   color: $font-color;
    font-size: 14px;
    font-weight: 600;
    opacity: 1;
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+}
+.icon{
+   margin-left: 8px;
 }
