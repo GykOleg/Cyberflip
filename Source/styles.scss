@@ -9,7 +9,7 @@
 @import "nullstyle";
 /*Styles*/
 //___________Variables___________
-$fn-sz: 16px;
+$fn-sz: 18px;
 $fn-sz-big: 24px;
 $title-big-sz: 56px;
 $title-mid-sz: 24px;
@@ -212,11 +212,6 @@ $font-color: #FFFFFF;
    &__info{
       padding: 15% 5%;
    }
-   &__title{
-      font-size: $title-big-sz-mobile;
-      font-weight: 700;
-      margin-bottom: 10%;
-   }
    &__button{
       margin-top: 10%;
    }
@@ -253,7 +248,6 @@ $font-color: #FFFFFF;
    &__title-img{
       margin: 10% 0;
    }
-   &__desc{}
 }
 .footer{
    &__body{
@@ -269,8 +263,6 @@ $font-color: #FFFFFF;
    &__desc{
       margin-bottom: 5%;
    }
-   &__social{
-   }
    &__socials{
       display: flex;
       justify-content: space-between;
@@ -281,15 +273,48 @@ $font-color: #FFFFFF;
       border-radius: 25%;
       padding: 3%;
    }
-   &__corporate{}
-   &__icon{
-
+   &__corporate{
+      width: 100%;
    }
-   &__item{}
-   &__list{}
-   &__services{}
-   &__title-small{}
+   &__services{
+      width: 100%;
+   }
+   &__list{
+      display: none;
+      line-height: 30px;
+   }
+   &__title-small{
+      cursor: pointer;
+      position: relative;
+      font-size: 24px;
+      font-weight: 700;
+      margin: 20px 0;
+      padding-left: 30px;
+      &::before, &::after{
+         content: "";
+         position: absolute;
+         background-color: $font-color;
+         width: 10px;
+         height: 1px;
+         top: 12px
+      }
+      &::before{
+         left: 0;
+         transform: rotate(40deg);
+      }
+      &::after{
+         left: 7px;
+         transform: rotate(-40deg);
+      }
+      &.active::before{
+         transform: rotate(-40deg);
+      }
+      &.active::after{
+         transform: rotate(40deg);
+      }
+   }
    &__place{
+      margin-top: 25px;
       width: 100%;
       line-height: 30px;
    }
@@ -343,4 +368,224 @@ $font-color: #FFFFFF;
 }
 .icon{
    margin-left: 8px;
+}
+@media (min-width: 599px)
+{
+   .header{
+      &__body{
+         padding: 30px 35px;
+      }
+      &__logo{
+         font-size: 25px;
+      }
+      &__menu{
+         width: 40px;
+         height: 40px;
+         left: 85%;
+         top: 21px;
+         & span{
+            width: 40px;
+            height: 3px;
+         }
+         & span:nth-of-type(2) {
+            top: calc(50% - 10px);
+         }
+         & span:nth-of-type(3) {
+            top: calc(50% + 10px);
+         }
+      }
+   }
+   .intro{
+      &__underline{
+         font-size: 20px;
+      }
+   }
+   .services{
+      &__body{
+         padding: 7%;
+      }
+      &__title-main{
+         font-size: $title-big-sz-mobile;
+         font-weight: 700;
+      }
+   }
+   .service{
+      &__body{
+         margin: 12% 0;
+         font-size: $fn-sz;
+      }
+      &__title{
+         font-size: $title-mid-sz;
+         font-weight: 700;
+         line-height: 36px;
+      }
+      &__info{
+         width: 100%;
+         border: 3px solid #51026C;
+         border-image: linear-gradient(90deg, #300ED2 10%, #D501FF 90%);;
+         border-image-slice: 1;
+         border-radius: 2%;
+         padding: 8%;
+      }
+      &__list{
+         padding: 0 3%;
+         opacity: 0.8;
+         line-height: 24px;
+      }
+      &__item{
+         margin: 6% 6%;
+         &::before{
+            
+            margin-left: -25px;
+            padding-right: 26px;
+         }
+      }
+      &__button{
+         margin-top: 7%;
+         font-size: 14px;
+      }
+   }
+   .summary{
+      &__info{
+         padding: 10% 5%;
+      }
+   }
+   .about-us{
+      &__body{
+         padding: 10% 5%;
+      }
+   }
+   .achivements{
+      &__body{
+         padding: 10% 5%;
+      }
+   }
+   .achivement{
+      width: 100%;
+      &__body{
+         text-align: left;
+      }
+      &__title-img{
+         margin: 10% 0;
+      }
+   }
+   .title{
+      margin-bottom: 5%;
+   }
+}
+@media (min-width: 900px)
+{
+   .body{
+      font-size: $fn-sz-big;
+   }
+   .header{
+      &__body{
+         padding: 35px 40px;
+      }
+      &__logo{
+         font-size: 25px;
+      }
+      &__menu{
+         width: 40px;
+         height: 40px;
+         left: 90%;
+         top: 23px;
+         & span{
+            width: 40px;
+            height: 4px;
+         }
+         & span:nth-of-type(2) {
+            top: calc(50% - 12px);
+         }
+         & span:nth-of-type(3) {
+            top: calc(50% + 12px);
+         }
+      }
+   }
+   .intro{
+      &__body{
+         padding: 250px 7% 250px 7%;;
+      }
+      &__header{
+         font-size: 45px;
+         line-height: 72px;
+      }
+      &__line{
+         height: 3px;
+         margin: 20px 0 35px;
+      }
+      &__underline{
+         font-size: 24px;
+      }
+   }
+   .services{
+      &__button{
+         margin: 10% 0 5% 0;
+      }
+   }
+   .service{
+      &__body{
+         margin: 12% 0;
+         font-size: $fn-sz;
+      }
+      &__title{
+         font-size: $title-mid-sz;
+         font-weight: 700;
+         line-height: 36px;
+      }
+      &__info{
+         width: 100%;
+         border: 3px solid #51026C;
+         border-image: linear-gradient(90deg, #300ED2 10%, #D501FF 90%);;
+         border-image-slice: 1;
+         border-radius: 2%;
+         padding: 8%;
+      }
+      &__list{
+         padding: 0 3%;
+         opacity: 0.8;
+         line-height: 24px;
+      }
+      &__item{
+         margin: 6% 4%;
+         &::before{
+            margin-left: -30px;
+            padding-right: 30px;
+         }
+      }
+      &__button{
+         margin-top: 3%;
+         font-size: 14px;
+      }
+   }
+   .summary{
+      &__info{
+         padding: 5% 5%;
+      }
+   }
+   .about-us{
+      &__body{
+         padding: 5% 5%;
+      }
+   }
+   .achivements{
+      &__body{
+         padding: 10% 5%;
+      }
+      &__title{
+         margin-bottom: 3%;
+      }
+   }
+   .achivement{
+      width: 100%;
+      &__body{
+         text-align: left;
+      }
+      &__title-img{
+         margin: 10% 0;
+      }
+   }
+   .title{
+      margin-bottom: 5%;
+   }
 }
