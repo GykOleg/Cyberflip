@@ -266,19 +266,25 @@ $font-color: #FFFFFF;
       font-size: 20px;
       margin-bottom: 15px;
    }
-   &__desc{}
-   &__social{}
-   &__socials{}
+   &__desc{
+      margin-bottom: 5%;
+   }
+   &__social{
+   }
+   &__socials{
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 5%;
+   }
    &__icon-button{
-      background-color: $main-color;
-      border: 3px solid #51026C;
-      border-image: linear-gradient(90deg, #300ED2 10%, #D501FF 90%);;
-      border-image-slice: 1;
-      border-radius: 10px;
+      background-image:linear-gradient(90deg, #300ED2 10%, #D501FF 90%);;
+      border-radius: 25%;
       padding: 3%;
    }
    &__corporate{}
-   &__icon{}
+   &__icon{
+
+   }
    &__item{}
    &__list{}
    &__services{}
