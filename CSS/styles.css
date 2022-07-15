@@ -318,6 +318,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #0E0E0E;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 .summary__info {
   padding: 10% 5%;
@@ -481,7 +482,7 @@ h1, h2, h3, h4, h5, h6 {
     margin: 10% 0;
   }
 }
-@media (min-width: 765px) {
+@media (min-width: 900px) {
   .services__button {
     margin: 10% 0 5% 0;
   }
