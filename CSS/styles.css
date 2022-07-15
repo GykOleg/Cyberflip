@@ -1,10 +1,7 @@
 @charset "UTF-8";
-/*Fonts*/
 @import url("https://fonts.googleapis.com/css2?family=Lexend+Zetta&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Devanagari&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
-/*Null style*/
-/*Clean styles*/
 * {
   padding: 0;
   margin: 0;
@@ -92,26 +89,15 @@ h1, h2, h3, h4, h5, h6 {
   flex-direction: column;
 }
 
+/*__header, menu, nav__*/
 .mobile-menu__body {
-  visibility: hidden;
   display: flex;
-  opacity: 0;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 3%;
-  width: 100%;
-  height: 100%;
-  position: fixed;
+  padding: 15% 5% 0;
   background-color: #0b0b0b;
-  z-index: 2;
-  transition: all 1000ms;
-}
-.mobile-menu__logo {
-  font-family: "Lexend Zetta", sans-serif;
-  font-size: 16px;
-  text-transform: uppercase;
-  margin-bottom: 25px;
+  z-index: 1;
 }
 .mobile-menu__item {
   margin: 3% 0 6%;
@@ -170,6 +156,55 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "IBM Plex Sans Devanagari", sans-serif;
 }
 
+@media (min-width: 599px) {
+  .header__body {
+    padding: 30px 35px;
+  }
+  .header__menu {
+    width: 40px;
+    height: 40px;
+    left: 87%;
+    top: 21px;
+  }
+  .header__menu span {
+    width: 40px;
+    height: 3px;
+  }
+  .header__menu span:nth-of-type(2) {
+    top: calc(50% - 10px);
+  }
+  .header__menu span:nth-of-type(3) {
+    top: calc(50% + 10px);
+  }
+}
+@media (min-width: 765px) {
+  .mobile-menu__body {
+    padding: 12% 5% 12%;
+  }
+  .mobile-menu__item {
+    font-size: 24px;
+    margin: 5% 0;
+  }
+  .header__body {
+    padding: 45px 50px;
+  }
+  .header__menu {
+    width: 40px;
+    height: 40px;
+    left: 90%;
+    top: 28px;
+  }
+  .header__menu span {
+    width: 40px;
+    height: 4px;
+  }
+  .header__menu span:nth-of-type(2) {
+    top: calc(50% - 12px);
+  }
+  .header__menu span:nth-of-type(3) {
+    top: calc(50% + 12px);
+  }
+}
 .intro {
   background-image: url("../IMG/wave.svg");
   background-repeat: no-repeat;
@@ -198,6 +233,27 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 35px;
 }
 
+@media (min-width: 599px) {
+  .intro__underline {
+    font-size: 20px;
+  }
+}
+@media (min-width: 900px) {
+  .intro__body {
+    padding: 250px 7% 250px 7%;
+  }
+  .intro__header {
+    font-size: 45px;
+    line-height: 72px;
+  }
+  .intro__line {
+    height: 3px;
+    margin: 20px 0 35px;
+  }
+  .intro__underline {
+    font-size: 24px;
+  }
+}
 .main-content {
   flex: 0 1 auto;
 }
@@ -210,7 +266,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 7%;
 }
 .services__title-main {
-  font-size: 33px;
+  font-size: 36px;
   font-weight: 700;
 }
 .services__button {
@@ -260,9 +316,11 @@ h1, h2, h3, h4, h5, h6 {
 .summary__body {
   background-color: #F4F4F4;
   color: #0E0E0E;
+  display: flex;
+  align-items: center;
 }
 .summary__info {
-  padding: 15% 5%;
+  padding: 10% 5%;
 }
 .summary__button {
   margin-top: 10%;
@@ -274,13 +332,13 @@ h1, h2, h3, h4, h5, h6 {
 .about-us__body {
   background-color: #F4F4F4;
   color: #0E0E0E;
-  padding: 15% 5%;
+  padding: 10% 5%;
 }
 
 .achivements__body {
   background-color: #F4F4F4;
   color: #0E0E0E;
-  padding: 15% 5%;
+  padding: 10% 5%;
 }
 .achivements__blocks {
   display: flex;
@@ -289,21 +347,214 @@ h1, h2, h3, h4, h5, h6 {
 
 .achivement__body {
   margin: 0 auto;
-  text-align: center;
 }
 .achivement__title-img {
   margin: 10% 0;
 }
 
+@media (min-width: 599px) {
+  .services__body {
+    padding: 4% 7%;
+  }
+  .services__button {
+    margin: 7% 0;
+  }
+  .service__body {
+    margin: 12% 0;
+    font-size: 16px;
+  }
+  .service__title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+  }
+  .service__info {
+    width: 100%;
+    border: 3px solid #51026C;
+    -o-border-image: linear-gradient(90deg, #300ED2 10%, #D501FF 90%);
+       border-image: linear-gradient(90deg, #300ED2 10%, #D501FF 90%);
+    border-image-slice: 1;
+    border-radius: 2%;
+    padding: 8%;
+  }
+  .service__list {
+    padding: 0 3%;
+    opacity: 0.8;
+    line-height: 24px;
+  }
+  .service__item {
+    margin: 6% 6%;
+  }
+  .service__item::before {
+    margin-left: -25px;
+    padding-right: 26px;
+  }
+  .service__button {
+    margin-top: 7%;
+    font-size: 14px;
+  }
+  .summary__info {
+    padding: 7% 5%;
+  }
+  .about-us__body {
+    padding: 7% 5%;
+  }
+  .achivements__body {
+    padding: 7% 5%;
+  }
+  .achivement {
+    width: 50%;
+  }
+  .achivement__body {
+    text-align: center;
+  }
+  .achivement__title-img {
+    margin: 5% 0 8%;
+  }
+}
+@media (min-width: 765px) {
+  .services__button {
+    margin: 10% 0 5% 0;
+  }
+  .service__body {
+    margin: 12% 0;
+    font-size: 16px;
+  }
+  .service__title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+  }
+  .service__info {
+    width: 100%;
+    border: 3px solid #51026C;
+    -o-border-image: linear-gradient(90deg, #300ED2 10%, #D501FF 90%);
+       border-image: linear-gradient(90deg, #300ED2 10%, #D501FF 90%);
+    border-image-slice: 1;
+    border-radius: 2%;
+    padding: 8%;
+  }
+  .service__list {
+    padding: 0 3%;
+    opacity: 0.8;
+    line-height: 24px;
+  }
+  .service__item {
+    margin: 6% 4%;
+  }
+  .service__item::before {
+    margin-left: -30px;
+    padding-right: 30px;
+  }
+  .service__button {
+    margin-top: 3%;
+    font-size: 14px;
+  }
+  .summary__info {
+    padding: 5% 5%;
+    width: 50%;
+  }
+  .summary__img-block {
+    display: block;
+    width: 50%;
+  }
+  .summary__img {
+    width: 312px;
+    height: 285px;
+  }
+  .about-us__body {
+    padding: 5% 5%;
+  }
+  .achivements__body {
+    padding: 10% 5%;
+  }
+  .achivements__title {
+    margin-bottom: 3%;
+  }
+  .achivement {
+    width: 50%;
+  }
+  .achivement__body {
+    text-align: left;
+  }
+  .achivement__title-img {
+    margin: 10% 0;
+  }
+}
+@media (min-width: 765px) {
+  .services__button {
+    margin: 10% 0 5% 0;
+  }
+  .service__body {
+    margin: 12% 0;
+    font-size: 16px;
+  }
+  .service__title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+  }
+  .service__info {
+    width: 100%;
+    border: 3px solid #51026C;
+    -o-border-image: linear-gradient(90deg, #300ED2 10%, #D501FF 90%);
+       border-image: linear-gradient(90deg, #300ED2 10%, #D501FF 90%);
+    border-image-slice: 1;
+    border-radius: 2%;
+    padding: 8%;
+  }
+  .service__list {
+    padding: 0 3%;
+    opacity: 0.8;
+    line-height: 24px;
+  }
+  .service__item {
+    margin: 6% 4%;
+  }
+  .service__item::before {
+    margin-left: -30px;
+    padding-right: 30px;
+  }
+  .service__button {
+    margin-top: 3%;
+    font-size: 14px;
+  }
+  .summary__info {
+    padding: 5% 5%;
+    width: 50%;
+  }
+  .summary__img-block {
+    display: block;
+    width: 50%;
+  }
+  .summary__img {
+    width: 312px;
+    height: 285px;
+  }
+  .about-us__body {
+    padding: 5% 5%;
+  }
+  .achivements__body {
+    padding: 10% 5%;
+  }
+  .achivements__title {
+    margin-bottom: 3%;
+  }
+  .achivement {
+    width: 50%;
+  }
+  .achivement__body {
+    text-align: left;
+  }
+  .achivement__title-img {
+    margin: 10% 0;
+  }
+}
 .footer__body {
   display: flex;
   flex-wrap: wrap;
   padding: 7%;
-}
-.footer__title {
-  font-family: "Lexend Zetta", sans-serif;
-  font-size: 20px;
-  margin-bottom: 15px;
+  font-size: 14px;
 }
 .footer__desc {
   margin-bottom: 5%;
@@ -311,12 +562,18 @@ h1, h2, h3, h4, h5, h6 {
 .footer__socials {
   display: flex;
   justify-content: space-between;
+  width: 70%;
   margin-bottom: 5%;
 }
 .footer__icon-button {
   background-image: linear-gradient(90deg, #300ED2 10%, #D501FF 90%);
   border-radius: 25%;
   padding: 3%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
 }
 .footer__corporate {
   width: 100%;
@@ -367,25 +624,13 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 15px;
 }
 
-.menu-open {
-  visibility: visible;
-  opacity: 1;
-  transition: all 1000ms;
+@media (min-width: 599px) {
+  .footer__desc {
+    width: 70%;
+  }
 }
-
-.hidden {
-  display: none;
-  opacity: 0;
-}
-
-.open {
-  display: block;
-  opacity: 1;
-  transition: all 500ms;
-}
-
 .title {
-  font-size: 33px;
+  font-size: 36px;
   font-weight: 700;
   margin-bottom: 10%;
   line-height: 46px;
@@ -422,194 +667,27 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: 8px;
 }
 
+.logo {
+  font-family: "Lexend Zetta", sans-serif;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
 @media (min-width: 599px) {
-  .header__body {
-    padding: 30px 35px;
-  }
-  .header__logo {
-    font-size: 25px;
-  }
-  .header__menu {
-    width: 40px;
-    height: 40px;
-    left: 85%;
-    top: 21px;
-  }
-  .header__menu span {
-    width: 40px;
-    height: 3px;
-  }
-  .header__menu span:nth-of-type(2) {
-    top: calc(50% - 10px);
-  }
-  .header__menu span:nth-of-type(3) {
-    top: calc(50% + 10px);
-  }
-  .intro__underline {
-    font-size: 20px;
-  }
-  .services__body {
-    padding: 7%;
-  }
-  .services__title-main {
-    font-size: 33px;
-    font-weight: 700;
-  }
-  .service__body {
-    margin: 12% 0;
-    font-size: 18px;
-  }
-  .service__title {
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 36px;
-  }
-  .service__info {
-    width: 100%;
-    border: 3px solid #51026C;
-    -o-border-image: linear-gradient(90deg, #300ED2 10%, #D501FF 90%);
-       border-image: linear-gradient(90deg, #300ED2 10%, #D501FF 90%);
-    border-image-slice: 1;
-    border-radius: 2%;
-    padding: 8%;
-  }
-  .service__list {
-    padding: 0 3%;
-    opacity: 0.8;
-    line-height: 24px;
-  }
-  .service__item {
-    margin: 6% 6%;
-  }
-  .service__item::before {
-    margin-left: -25px;
-    padding-right: 26px;
-  }
-  .service__button {
-    margin-top: 7%;
-    font-size: 14px;
-  }
-  .summary__info {
-    padding: 10% 5%;
-  }
-  .about-us__body {
-    padding: 10% 5%;
-  }
-  .achivements__body {
-    padding: 10% 5%;
-  }
-  .achivement {
-    width: 100%;
-  }
-  .achivement__body {
-    text-align: left;
-  }
-  .achivement__title-img {
-    margin: 10% 0;
-  }
   .title {
-    margin-bottom: 5%;
+    margin-bottom: 7%;
   }
 }
-@media (min-width: 900px) {
-  .body {
+@media (min-width: 765px) {
+  .mobile-menu__item:last-child {
+    font-weight: 400;
     font-size: 24px;
-  }
-  .header__body {
-    padding: 35px 40px;
-  }
-  .header__logo {
-    font-size: 25px;
-  }
-  .header__menu {
-    width: 40px;
-    height: 40px;
-    left: 90%;
-    top: 23px;
-  }
-  .header__menu span {
-    width: 40px;
-    height: 4px;
-  }
-  .header__menu span:nth-of-type(2) {
-    top: calc(50% - 12px);
-  }
-  .header__menu span:nth-of-type(3) {
-    top: calc(50% + 12px);
-  }
-  .intro__body {
-    padding: 250px 7% 250px 7%;
-  }
-  .intro__header {
-    font-size: 45px;
-    line-height: 72px;
-  }
-  .intro__line {
-    height: 3px;
-    margin: 20px 0 35px;
-  }
-  .intro__underline {
-    font-size: 24px;
-  }
-  .services__button {
-    margin: 10% 0 5% 0;
-  }
-  .service__body {
-    margin: 12% 0;
-    font-size: 18px;
-  }
-  .service__title {
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 36px;
-  }
-  .service__info {
-    width: 100%;
-    border: 3px solid #51026C;
-    -o-border-image: linear-gradient(90deg, #300ED2 10%, #D501FF 90%);
-       border-image: linear-gradient(90deg, #300ED2 10%, #D501FF 90%);
-    border-image-slice: 1;
-    border-radius: 2%;
-    padding: 8%;
-  }
-  .service__list {
-    padding: 0 3%;
-    opacity: 0.8;
-    line-height: 24px;
-  }
-  .service__item {
-    margin: 6% 4%;
-  }
-  .service__item::before {
-    margin-left: -30px;
-    padding-right: 30px;
-  }
-  .service__button {
-    margin-top: 3%;
-    font-size: 14px;
-  }
-  .summary__info {
-    padding: 5% 5%;
-  }
-  .about-us__body {
-    padding: 5% 5%;
-  }
-  .achivements__body {
-    padding: 10% 5%;
-  }
-  .achivements__title {
-    margin-bottom: 3%;
-  }
-  .achivement {
-    width: 100%;
-  }
-  .achivement__body {
-    text-align: left;
-  }
-  .achivement__title-img {
-    margin: 10% 0;
   }
   .title {
-    margin-bottom: 5%;
+    margin-bottom: 7%;
+    font-size: 36px;
+  }
+  .logo {
+    font-size: 20px;
   }
 }

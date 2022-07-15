@@ -1,0 +1,126 @@
+/*__header, menu, nav__*/
+.mobile-menu{
+   &__body{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 15% 5% 0;
+      background-color: #0b0b0b;
+      z-index: 1;
+   }
+   &__item{
+      margin: 3% 0 6%;
+      color: $font-color;
+   }
+}
+.header{
+   &__body{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 25px;
+      line-height: 24px;
+      transition: all 500ms;
+   }
+   &__logo{
+      font-family: 'Lexend Zetta', sans-serif;
+      font-size: 16px;
+      text-transform: uppercase;
+   }
+   &__menu{
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      z-index: 2;
+      overflow: hidden;
+      left: 85%;
+      top: 15px;
+      & span{
+         width: 30px;
+         height: 2px;
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+         background-color: $font-color;
+         transition: all 0.5s;
+      }
+      & span:nth-of-type(2) {
+         top: calc(50% - 8px);
+      }
+      & span:nth-of-type(3) {
+         top: calc(50% + 8px);
+      }
+   }
+   &__nav{
+      display: none;
+   }
+}
+.nav{
+   &__body{
+      display: flex;
+   }
+   &__item{
+      margin: 0 10%;
+      color: #0b0b0b;
+      font-family: 'IBM Plex Sans Devanagari', sans-serif;
+   }
+}
+@media (min-width: 599px){
+   .header{
+      &__body{
+         padding: 30px 35px;
+      }
+      &__menu{
+         width: 40px;
+         height: 40px;
+         left: 87%;
+         top: 21px;
+         & span{
+            width: 40px;
+            height: 3px;
+         }
+         & span:nth-of-type(2) {
+            top: calc(50% - 10px);
+         }
+         & span:nth-of-type(3) {
+            top: calc(50% + 10px);
+         }
+      }
+   }
+}
+@media (min-width: 765px)
+{
+   .mobile-menu{
+      &__body{
+         padding: 12% 5% 12%;
+      }
+      &__item{
+         font-size: 24px;
+         margin: 5% 0;
+      }
+   }
+   .header{
+      &__body{
+         padding: 45px 50px;
+      }
+      &__menu{
+         width: 40px;
+         height: 40px;
+         left: 90%;
+         top: 28px;
+         & span{
+            width: 40px;
+            height: 4px;
+         }
+         & span:nth-of-type(2) {
+            top: calc(50% - 12px);
+         }
+         & span:nth-of-type(3) {
+            top: calc(50% + 12px);
+         }
+      }
+   }
+}

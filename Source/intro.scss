@@ -1,0 +1,56 @@
+.intro{
+   background-image: url("../IMG/wave.svg");
+   background-repeat: no-repeat;
+   background-size:cover;
+   background-position: left;
+   &__body{
+      padding: 150px 7% 150px 7%;
+      //background-position: center;
+   }
+   &__line{
+      margin: 15px 0;
+      height: 2px;
+      width: 50%;
+      background-image:linear-gradient(90deg, #300ED2 10%, #D501FF 90%);;
+      background-size: cover;
+   }
+   &__header{
+      font-size: 25px;
+      line-height: 40px;
+      font-weight: 700;
+   }
+}
+.intro-slider{
+   &__body{
+      height: 300px;
+      background-image:linear-gradient(90deg, #06050000 10%, #51026C 90%);;
+      margin-bottom: 35px;
+   }
+}
+@media (min-width: 599px)
+{
+   .intro{
+      &__underline{
+         font-size: 20px;
+      }
+   }
+}
+@media (min-width: 900px)
+{
+   .intro{
+      &__body{
+         padding: 250px 7% 250px 7%;;
+      }
+      &__header{
+         font-size: 45px;
+         line-height: 72px;
+      }
+      &__line{
+         height: 3px;
+         margin: 20px 0 35px;
+      }
+      &__underline{
+         font-size: 24px;
+      }
+   }
+}
