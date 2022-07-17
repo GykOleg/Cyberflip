@@ -162,16 +162,16 @@
       }
    }
    .achivement{
-      width: 50%;
+      width: 100%;
       &__body{
-         text-align: center;
+         text-align: left;
       }
       &__title-img{
          margin: 5% 0 8%;
       }
    }
 }
-@media (min-width: 600px)
+@media (min-width: 765px)
 {
    .services{
       &__button{
@@ -223,8 +223,8 @@
          width: 50%;
       }
       &__img{
-         width: 312px;
-         height: 285px;
+         width: 310px;
+         height: 265px;
       }
    }
    .about-us{
@@ -250,7 +250,7 @@
       }
    }
 }
-@media (min-width: 765px){
+@media (min-width: 900px){
    .services{
       &__button{
          margin: 10% 0 5% 0;

@@ -404,10 +404,10 @@ h1, h2, h3, h4, h5, h6 {
     padding: 7% 5%;
   }
   .achivement {
-    width: 50%;
+    width: 100%;
   }
   .achivement__body {
-    text-align: center;
+    text-align: left;
   }
   .achivement__title-img {
     margin: 5% 0 8%;
@@ -460,8 +460,8 @@ h1, h2, h3, h4, h5, h6 {
     width: 50%;
   }
   .summary__img {
-    width: 312px;
-    height: 285px;
+    width: 310px;
+    height: 265px;
   }
   .about-us__body {
     padding: 5% 5%;
