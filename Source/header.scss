@@ -55,7 +55,7 @@
       }
    }
    &__nav{
-      display: none;
+      display: block;
    }
 }
 .nav{
@@ -91,8 +91,7 @@
       }
    }
 }
-@media (min-width: 765px)
-{
+@media (min-width: 765px){
    .mobile-menu{
       &__body{
          padding: 12% 5% 12%;
@@ -121,6 +120,19 @@
          & span:nth-of-type(3) {
             top: calc(50% + 12px);
          }
+      }
+   }
+}
+@media (min-width: 1023px){
+   .header{
+      &__body{
+         padding: 25px 25px;
+      }
+      &__menu{
+         display: none;
+      }
+      &__nav{
+         display: block;
       }
    }
 }

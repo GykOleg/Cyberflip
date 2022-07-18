@@ -6,7 +6,9 @@ $(function () {
    $(".slider").slick({
       dots: true
    });
-   $(".footer__title-small").click(function () {
-      $(this).toggleClass("active").next().slideToggle(500);
-   });
+   if (window.matchMedia('all and (max-width: 900px').matches) {
+      $(".footer__title-small").click(function () {
+         $(this).toggleClass("active").next().slideToggle(500);
+      });
+   }
 });

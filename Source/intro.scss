@@ -5,7 +5,6 @@
    background-position: left;
    &__body{
       padding: 150px 7% 150px 7%;
-      //background-position: center;
    }
    &__line{
       margin: 15px 0;
@@ -27,8 +26,13 @@
    &-track{
       display: flex;
    }
+   &-slide{
+      width: 100%;
+      padding: 40px 2% 0;
+      font-size: 12px;
+   }
    &-dots{
-      display: flex;
+      display: none;
       align-items: center;
       justify-content: center;
       & li{
@@ -44,32 +48,143 @@
       }
    }
 }
+li.slick-active button{
+   opacity: 0.54;
+}
 
 .slider{
    position: relative;
-   padding: 25%;
+   margin: 2% 2% 20%;
+   padding-bottom: 30px;
+   background-image: linear-gradient(90deg, rgba(6, 5, 0, 0) 0%, #51026C 100%);
+   &__title{
+      font-size: 25px;
+      font-weight: 700;
+      margin-bottom: 25px;
+   }
    & .slick-arrow{
       position: absolute;
       z-index: 5;
-      top: 60%;
+      height: 18px;
+      width: 18px;
+      font-size: 0px;
+      top: 50%;
+      background-color: #2f0ed200;
+      opacity: 0.8;
    }
    & .slick-prev{
-      left: 28%;
+      background-image: url("../IMG/icons/arrowLeft.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      left: 2%;
    }
    & .slick-next{
-      right: 28%;
+      background-image: url("../IMG/icons/arrowRight.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      right: 2%;
    }
 }
-@media (min-width: 599px)
-{
+@media (min-width: 599px){
    .intro{
       &__underline{
          font-size: 20px;
       }
    }
 }
-@media (min-width: 900px)
-{
+@media (min-width: 765px){
+   .slider{
+      position: relative;
+      margin: 10% 10%;
+      padding-bottom: 30px;
+      background-image: linear-gradient(90deg, rgba(6, 5, 0, 0) 0%, #51026C 100%);
+      &__title{
+         font-size: 25px;
+         font-weight: 700;
+         margin-bottom: 25px;
+      }
+      & .slick-arrow{
+         position: absolute;
+         z-index: 5;
+         height: 18px;
+         width: 18px;
+         font-size: 0px;
+         top: 50%;
+         background-color: #2f0ed200;
+         opacity: 0.8;
+      }
+      & .slick-prev{
+         background-image: url("../IMG/icons/arrowLeft.svg");
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: contain;
+         left: 2%;
+      }
+      & .slick-next{
+         background-image: url("../IMG/icons/arrowRight.png");
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: contain;
+         right: 2%;
+      }
+   }
+}
+@media (min-width: 900px){
+   .slick{
+      &-slide{
+         width: 100%;
+         padding: 120px 50px 50px 4%;
+      }
+      &-dots{
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         & li{
+            list-style: none;
+         }
+         & button{
+            font-size: 0px;
+            width: 8px;
+            height: 8px;
+            background-color: $font-color;
+            border-radius: 50%;
+            margin: 15px 5px;
+         }
+      }
+   }
+   .slider{
+      margin: 5%;
+      padding-bottom: 80px;
+      &__title{
+         font-size: 40px;
+         font-weight: 700;
+         margin-bottom: 35px;
+      }
+      & .slick-arrow{
+         height: 15px;
+         width: 15px;
+         top: 100%;
+         background-color: #2f0ed200;
+         opacity: 0.54;
+         margin: -110px;
+      }
+      & .slick-prev{
+         background-image: url("../IMG/icons/arrowLeft.svg");
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: contain;
+         left: 50%;
+      }
+      & .slick-next{
+         background-image: url("../IMG/icons/arrowRight.png");
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: contain;
+         right: 50%;
+      }
+   }
    .intro{
       &__body{
          padding: 250px 7% 250px 7%;;

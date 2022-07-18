@@ -144,7 +144,7 @@ h1, h2, h3, h4, h5, h6 {
   top: calc(50% + 8px);
 }
 .header__nav {
-  display: none;
+  display: block;
 }
 
 .nav__body {
@@ -205,6 +205,17 @@ h1, h2, h3, h4, h5, h6 {
     top: calc(50% + 12px);
   }
 }
+@media (min-width: 1023px) {
+  .header__body {
+    padding: 25px 25px;
+  }
+  .header__menu {
+    display: none;
+  }
+  .header__nav {
+    display: block;
+  }
+}
 .intro {
   background-image: url("../IMG/wave.svg");
   background-repeat: no-repeat;
@@ -233,8 +244,13 @@ h1, h2, h3, h4, h5, h6 {
 .slick-track {
   display: flex;
 }
+.slick-slide {
+  width: 100%;
+  padding: 40px 2% 0;
+  font-size: 12px;
+}
 .slick-dots {
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
 }
@@ -250,20 +266,44 @@ h1, h2, h3, h4, h5, h6 {
   margin: 15px;
 }
 
+li.slick-active button {
+  opacity: 0.54;
+}
+
 .slider {
   position: relative;
-  padding: 25%;
+  margin: 2% 2% 20%;
+  padding-bottom: 30px;
+  background-image: linear-gradient(90deg, rgba(6, 5, 0, 0) 0%, #51026C 100%);
+}
+.slider__title {
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 25px;
 }
 .slider .slick-arrow {
   position: absolute;
   z-index: 5;
-  top: 60%;
+  height: 18px;
+  width: 18px;
+  font-size: 0px;
+  top: 50%;
+  background-color: rgba(47, 14, 210, 0);
+  opacity: 0.8;
 }
 .slider .slick-prev {
-  left: 28%;
+  background-image: url("../IMG/icons/arrowLeft.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  left: 2%;
 }
 .slider .slick-next {
-  right: 28%;
+  background-image: url("../IMG/icons/arrowRight.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  right: 2%;
 }
 
 @media (min-width: 599px) {
@@ -271,7 +311,95 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 20px;
   }
 }
+@media (min-width: 765px) {
+  .slider {
+    position: relative;
+    margin: 10% 10%;
+    padding-bottom: 30px;
+    background-image: linear-gradient(90deg, rgba(6, 5, 0, 0) 0%, #51026C 100%);
+  }
+  .slider__title {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 25px;
+  }
+  .slider .slick-arrow {
+    position: absolute;
+    z-index: 5;
+    height: 18px;
+    width: 18px;
+    font-size: 0px;
+    top: 50%;
+    background-color: rgba(47, 14, 210, 0);
+    opacity: 0.8;
+  }
+  .slider .slick-prev {
+    background-image: url("../IMG/icons/arrowLeft.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    left: 2%;
+  }
+  .slider .slick-next {
+    background-image: url("../IMG/icons/arrowRight.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    right: 2%;
+  }
+}
 @media (min-width: 900px) {
+  .slick-slide {
+    width: 100%;
+    padding: 120px 50px 50px 4%;
+  }
+  .slick-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .slick-dots li {
+    list-style: none;
+  }
+  .slick-dots button {
+    font-size: 0px;
+    width: 8px;
+    height: 8px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    margin: 15px 5px;
+  }
+  .slider {
+    margin: 5%;
+    padding-bottom: 80px;
+  }
+  .slider__title {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 35px;
+  }
+  .slider .slick-arrow {
+    height: 15px;
+    width: 15px;
+    top: 100%;
+    background-color: rgba(47, 14, 210, 0);
+    opacity: 0.54;
+    margin: -110px;
+  }
+  .slider .slick-prev {
+    background-image: url("../IMG/icons/arrowLeft.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    left: 50%;
+  }
+  .slider .slick-next {
+    background-image: url("../IMG/icons/arrowRight.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    right: 50%;
+  }
   .intro__body {
     padding: 250px 7% 250px 7%;
   }
@@ -450,6 +578,9 @@ h1, h2, h3, h4, h5, h6 {
   .services__button {
     margin: 10% 0 5% 0;
   }
+  .services__body {
+    padding: 4%;
+  }
   .service__body {
     margin: 12% 0;
     font-size: 16px;
@@ -466,7 +597,7 @@ h1, h2, h3, h4, h5, h6 {
        border-image: linear-gradient(90deg, #300ED2 10%, #D501FF 90%);
     border-image-slice: 1;
     border-radius: 2%;
-    padding: 8%;
+    padding: 5%;
   }
   .service__list {
     padding: 0 3%;
@@ -474,11 +605,11 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 24px;
   }
   .service__item {
-    margin: 6% 4%;
+    margin: 3% 0%;
   }
   .service__item::before {
-    margin-left: -30px;
-    padding-right: 30px;
+    margin-left: -20px;
+    padding-right: 20px;
   }
   .service__button {
     margin-top: 3%;
@@ -491,6 +622,7 @@ h1, h2, h3, h4, h5, h6 {
   .summary__img-block {
     display: block;
     width: 50%;
+    text-align: center;
   }
   .summary__img {
     width: 310px;
@@ -554,7 +686,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 14px;
   }
   .summary__info {
-    padding: 5% 5%;
+    padding: 5% 0 5% 5%;
     width: 50%;
   }
   .summary__img-block {
@@ -661,6 +793,59 @@ h1, h2, h3, h4, h5, h6 {
 @media (min-width: 599px) {
   .footer__desc {
     width: 70%;
+  }
+}
+@media (min-width: 900px) {
+  .footer__body {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 4%;
+    font-size: 14px;
+  }
+  .footer__desc {
+    margin-bottom: 5%;
+  }
+  .footer__social {
+    width: 50%;
+  }
+  .footer__socials {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5%;
+  }
+  .footer__corporate {
+    width: 25%;
+  }
+  .footer__services {
+    width: 25%;
+  }
+  .footer__list {
+    display: block;
+    line-height: 30px;
+  }
+  .footer__title-small {
+    cursor: default;
+    position: relative;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0 0 15px;
+    padding: 0;
+  }
+  .footer__title-small::before, .footer__title-small::after {
+    content: none;
+  }
+  .footer__place {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 25px;
+    padding-right: 8%;
+    width: 100%;
+    line-height: 30px;
+  }
+  .footer__contact {
+    margin-top: 15px;
   }
 }
 .title {
