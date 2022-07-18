@@ -443,6 +443,9 @@ li.slick-active button {
   line-height: 36px;
 }
 .service__info {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 35px;
   width: 100%;
   border: 3px solid #51026C;
   -o-border-image: linear-gradient(90deg, #300ED2 10%, #D501FF 90%);
@@ -621,12 +624,13 @@ li.slick-active button {
   }
   .summary__img-block {
     display: block;
+    height: 100%;
     width: 50%;
     text-align: center;
   }
   .summary__img {
-    width: 310px;
-    height: 265px;
+    width: 100%;
+    height: 100%;
   }
   .about-us__body {
     padding: 5% 5%;
@@ -714,6 +718,73 @@ li.slick-active button {
   }
   .achivement__title-img {
     margin: 10% 0;
+  }
+}
+@media (min-width: 1023px) {
+  .services__title-main {
+    font-size: 56px;
+  }
+  .service__body {
+    margin: 8% 0;
+    display: flex;
+  }
+  .service__title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+  }
+  .service__info {
+    width: 50%;
+    border: 3px solid #51026C;
+    -o-border-image: linear-gradient(90deg, #300ED2 10%, #D501FF 90%);
+       border-image: linear-gradient(90deg, #300ED2 10%, #D501FF 90%);
+    border-image-slice: 1;
+    border-radius: 2%;
+    padding: 5%;
+  }
+  .service__list {
+    padding: 2%;
+    opacity: 0.8;
+    line-height: 24px;
+  }
+  .service__item {
+    margin: 4% 0%;
+  }
+  .service__item::before {
+    content: "–";
+    display: inline-block;
+    width: 10px;
+    margin-left: -10px;
+    margin-right: -15px;
+  }
+  .service__button {
+    margin-top: 0%;
+    font-size: 14px;
+  }
+  .service__img-block {
+    width: 50%;
+    display: block;
+    margin-left: 2%;
+  }
+  .service__img {
+    width: 100%;
+    height: 100%;
+  }
+  .summary__text {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  .summary__img-block {
+    height: 100%;
+    width: 50%;
+  }
+  .about-us__text {
+    width: 85%;
+    font-size: 24px;
+    line-height: 36px;
+  }
+  .achivement__body {
+    text-align: center;
   }
 }
 .footer__body {
@@ -908,5 +979,11 @@ li.slick-active button {
   }
   .logo {
     font-size: 20px;
+  }
+}
+@media (min-width: 1023px) {
+  .title {
+    font-size: 56px;
+    margin-bottom: 5%;
   }
 }

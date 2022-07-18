@@ -92,3 +92,10 @@ $font-color: #FFFFFF;
       font-size: 20px;
    }
 }
+@media(min-width: 1023px)
+{
+   .title{
+      font-size: 56px;
+      margin-bottom: 5%;
+   }
+}
