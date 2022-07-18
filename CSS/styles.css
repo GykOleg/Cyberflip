@@ -233,13 +233,37 @@ h1, h2, h3, h4, h5, h6 {
 .slick-track {
   display: flex;
 }
+.slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slick-dots li {
+  list-style: none;
+}
+.slick-dots button {
+  font-size: 0px;
+  width: 10px;
+  height: 10px;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  margin: 15px;
+}
 
 .slider {
   position: relative;
+  padding: 25%;
 }
 .slider .slick-arrow {
   position: absolute;
   z-index: 5;
+  top: 60%;
+}
+.slider .slick-prev {
+  left: 28%;
+}
+.slider .slick-next {
+  right: 28%;
 }
 
 @media (min-width: 599px) {
