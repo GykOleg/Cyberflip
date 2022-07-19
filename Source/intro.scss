@@ -202,3 +202,16 @@ li.slick-active button{
       }
    }
 }
+@media (min-width: 1023px){
+   .intro{
+      &__header{
+         width: 70%;
+      }
+      &__line{
+         width: 35%;
+      }
+      &__underline{
+         font-size: 32px;
+      }
+   }
+}

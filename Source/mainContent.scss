@@ -264,7 +264,7 @@
    }
    .service{
       &__body{
-         margin: 12% 0;
+         margin: 9% 0;
          font-size: $fn-sz;
       }
       &__title{
@@ -278,7 +278,7 @@
          border-image: linear-gradient(90deg, #300ED2 10%, #D501FF 90%);;
          border-image-slice: 1;
          border-radius: 2%;
-         padding: 8%;
+         padding: 5%;
       }
       &__list{
          padding: 0 3%;
@@ -286,10 +286,10 @@
          line-height: 24px;
       }
       &__item{
-         margin: 6% 4%;
+         margin: 3% 2%;
          &::before{
-            margin-left: -30px;
-            padding-right: 30px;
+            margin-left: -36px;
+            padding-right: 22px;
          }
       }
       &__button{
@@ -359,7 +359,7 @@
          padding: 5%;
       }
       &__list{
-         padding: 2%;
+         padding: 5%;
          opacity: 0.8;
          line-height: 24px;
       }
@@ -369,8 +369,8 @@
             content: "–";
             display: inline-block;
             width: 10px;
-            margin-left: -10px;
-            margin-right: -15px;
+            margin-left: -15px;
+            padding-right: 15px;
          }
       }
       &__button{
@@ -397,7 +397,8 @@
          width: 50%;
       }
       &__img{
-
+         width: 420px;
+         height: 390px;
       }
    }
    .about-us{
@@ -407,9 +408,36 @@
          line-height: 36px;
       }
    }
-   .achivement{
+   .achivements{
       &__body{
-         text-align: center;
+         align-items: center;
       }
+   }
+   .achivement{
+      width: 25%;
+      &__body{
+         height: 100%;
+         width: 100%;
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+         align-items: center;
+      }
+      &__title-img{
+         height: 120px;
+         width: 240px;
+      }
+   }
+}
+@media(min-width: 1439px)
+{
+   .summary{
+      background-color: $font-color;
+   }
+   .about-us{
+      background-color: $font-color;
+   }
+   .achivements{
+      background-color: $font-color;
    }
 }

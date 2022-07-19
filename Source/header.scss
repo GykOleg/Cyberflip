@@ -55,7 +55,7 @@
       }
    }
    &__nav{
-      display: block;
+      display: none;
    }
 }
 .nav{
@@ -126,13 +126,61 @@
 @media (min-width: 1023px){
    .header{
       &__body{
-         padding: 25px 25px;
+         display: flex;
+         justify-content:space-between;
+         align-items: flex-start;
+         padding: 25px 30px;
+         line-height: 24px;
+         transition: all 500ms;
+         margin-bottom: 140px;
+      }
+      &__logo{
+         align-self: flex-end;
+      }
+      &__nav{
+         width: 60%;
       }
       &__menu{
          display: none;
       }
       &__nav{
          display: block;
+      }
+   }
+   .nav{
+      &__body{
+         display: flex;
+         align-items: center;
+         justify-content: flex-end;
+      }
+      &__item{
+         margin: 0 2%;
+         color: $font-color;
+         opacity: 0.8;
+         font-family: 'IBM Plex Sans Devanagari', sans-serif;
+         transition: all 300ms;
+         &:hover{
+            opacity: 1;
+            font-size: 18px;
+            transition: all 300ms;
+         }
+         &:last-child:hover{
+            font-size: 14px;
+         }
+      }
+   }
+}
+@media (min-width: 1440px){
+   .header{
+      &__body{
+         padding: 25px 5%;
+      }
+   }
+}
+@media(min-width: 2100px){
+   .header{
+      &__body{
+         padding: 25px 15%;
       }
    }
 }

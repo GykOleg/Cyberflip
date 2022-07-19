@@ -99,3 +99,10 @@ $font-color: #FFFFFF;
       margin-bottom: 5%;
    }
 }
+@media(min-width: 1439px)
+{
+   .container{
+      width: 1440px;
+      margin: 0 auto
+   }
+}
