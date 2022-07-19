@@ -861,13 +861,13 @@ li.slick-active button {
 }
 @media (min-width: 1439px) {
   .summary {
-    background-color: #FFFFFF;
+    background-color: #F4F4F4;
   }
   .about-us {
-    background-color: #FFFFFF;
+    background-color: #F4F4F4;
   }
   .achivements {
-    background-color: #FFFFFF;
+    background-color: #F4F4F4;
   }
 }
 .footer__body {
