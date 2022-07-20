@@ -2,8 +2,8 @@ $(function () {
    setTimeout(function () {
       $(".loading__middle").slideUp(300);
       setTimeout(function () {
-         $(".loading__body").fadeToggle(700);
-         $(".body").toggleClass("scroll-lock");
+         $(".loading").fadeToggle(700);
+         $(".body").removeClass("scroll-lock");
       }, 500);
    }, 10000);
    $(".mobile-menu__body").hide();

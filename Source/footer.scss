@@ -49,6 +49,11 @@
       display: none;
       line-height: 30px;
    }
+   &__item:hover{
+      cursor: pointer;
+      text-decoration: underline;
+      opacity: 0.8;
+   }
    &__title-small{
       cursor: pointer;
       position: relative;
