@@ -32,10 +32,14 @@ $font-color: #FFFFFF;
    display: flex;
    flex-direction: column;
 }
+@import "loadingScreen";
 @import "header";
 @import "intro";
 @import "mainContent";
 @import "footer";
+.scroll-lock{
+   overflow: hidden;
+}
 .title{
    font-size: $title-mid-sz;
    font-weight: 700;
