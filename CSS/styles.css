@@ -563,6 +563,7 @@ li.slick-active button {
 
 .services__body {
   padding: 7%;
+  position: relative;
 }
 .services__title-main {
   font-size: 36px;
@@ -572,6 +573,10 @@ li.slick-active button {
   margin: 20% 0 12% 0;
 }
 
+.service {
+  position: -webkit-sticky;
+  position: sticky;
+}
 .service__body {
   margin: 12% 0;
 }
@@ -581,6 +586,7 @@ li.slick-active button {
   line-height: 36px;
 }
 .service__info {
+  top: 35px;
   width: 100%;
   border: 3px solid #51026C;
   -o-border-image: linear-gradient(90deg, #300ED2 10%, #D501FF 90%);
@@ -1064,6 +1070,7 @@ li.slick-active button {
   }
   .footer__socials {
     display: flex;
+    width: 260px;
     justify-content: space-between;
     margin-bottom: 5%;
   }
