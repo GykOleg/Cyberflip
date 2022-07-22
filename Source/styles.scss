@@ -38,6 +38,7 @@ $font-color: #FFFFFF;
 @import "mainContent";
 @import "footer";
 @import "contact";
+@import "about";
 .scroll-lock{
    overflow: hidden;
 }
@@ -47,7 +48,14 @@ $font-color: #FFFFFF;
    margin-bottom: 10%;
    line-height: 46px;
 }
+.title-serv{
+   font-size: $title-sz;
+   font-weight: 700;
+   margin-bottom: 10%;
+   line-height: 46px;
+}
 .button{
+   cursor: pointer;
    border: 1px solid #300ED2;
    border-image: linear-gradient(90deg, #300ED2 10%, #D501FF 90%);;
    border-image-slice: 0.5;
@@ -94,6 +102,9 @@ $font-color: #FFFFFF;
       font-size: 16px;
       margin-bottom: 15px;
 }
+.link{
+   color: $font-color;
+}
 @media(min-width: 599px){
    .title{
       margin-bottom: 7%;
@@ -107,6 +118,12 @@ $font-color: #FFFFFF;
    .title{
       margin-bottom: 7%;
       font-size: $title-mid-sz;
+   }
+   .title-serv{
+      font-size: $title-mid-sz;
+      font-weight: 700;
+      margin-bottom: 10%;
+      line-height: 46px;
    }
    .logo{
       font-size: 20px;

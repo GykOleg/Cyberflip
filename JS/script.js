@@ -1,14 +1,14 @@
 $(function () {
    //loading screen
-   /*setTimeout(function () {
+   setTimeout(function () {
       $(".loading__middle").slideUp(300);
       setTimeout(function () {
          $(".loading").fadeToggle(700);
          $(".body").removeClass("scroll-lock");
       }, 500);
-   }, 10000);*/
-   $(".loading").fadeToggle(700);
-   $(".body").removeClass("scroll-lock");
+   }, 5000);
+   //$(".loading").fadeToggle(700);
+   //$(".body").removeClass("scroll-lock");
    //burger menu
    $(".mobile-menu__body").hide();
    $(".header__menu").click(function () {

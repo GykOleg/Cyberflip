@@ -1,0 +1,134 @@
+.about-list{
+   &__body{
+      padding: 8%;
+      margin: 10% 0;
+   }
+   &__desc{
+      border: 1px solid #51026C;
+      border-image: linear-gradient(90deg, #300ED2 10%, #D501FF 90%);;
+      border-image-slice: 1;
+      border-radius: 2%;
+      padding: 25px;
+      font-size: 16px;
+      opacity: 0.8;
+   }
+}
+.about{
+   &__body{
+      padding: 8%;
+      margin-bottom: 170px;
+      display: flex;
+      flex-wrap: wrap;
+   }
+   &__big-img{
+      display: none;
+      width: 100%;
+   }
+   &__big-block{
+      width: 100%;
+      margin-bottom: 70px;
+   }
+   &__block{
+      width: 100%;
+      margin-bottom: 70px;
+   }
+   &__img{
+      width: 100%;
+   }
+}
+
+@media(min-width: 600px) {
+   .about-list{
+      &__body{
+         display: flex;
+         margin: 10% 0 0%;
+         padding: 8% 8% 0%;
+      }
+      &__block{
+         width: 70%;
+      }
+      &__block:first-child{
+         width: 30%;
+      }
+      &__desc{
+         font-size: 20px;
+         line-height: 36px;
+      }
+   }
+   .about{
+      &__body{
+         padding: 8%;
+         margin-bottom: 30px;
+      }
+   }
+}
+@media(min-width: 765px) {
+   .about-list{
+      &__body{
+         display: flex;
+         margin: 10% 0;
+         padding: 8%;
+      }
+      &__block{
+         width: 50%;
+      }
+      &__block:first-child{
+         width: 50%;
+      }
+      &__desc{
+         font-size: 20px;
+         line-height: 36px;
+      }
+   }
+}
+@media(min-width: 1023px) {
+   .about-list{
+      &__body{
+         display: flex;
+         margin: 6% 0 15%;
+         padding: 8%;
+      }
+      &__desc{
+         font-size: 20px;
+         line-height: 36px;
+      }
+   }
+   .about{
+      &__body{
+         justify-content: space-between;
+         align-items: flex-start;
+      }
+      &__big-img{
+         display: block;
+         width: 100%;
+      }
+      &__big-block{
+         width: 100%;
+         margin-bottom: 70px;
+      }
+      &__block{
+         width: 49%;
+         margin-bottom: 70px;
+         &:nth-child(even){
+            margin-right: 15px;
+         }
+      }
+      &__img{
+         width: 100%;
+      }
+   }
+}
+@media(min-width: 1439px) {
+   .about-list{
+      &__body{
+         display: flex;
+         margin: 6% 0 0;
+         padding: 8%;
+      }
+      &__desc{
+         font-size: 32px;
+         line-height: 48px;
+         padding-right: 25%;
+      }
+   }
+}

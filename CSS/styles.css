@@ -1103,6 +1103,9 @@ li.slick-active button {
     margin-top: 15px;
   }
 }
+.contact {
+  flex: 1 0 auto;
+}
 .contact__body {
   padding: 8%;
   font-size: 16px;
@@ -1123,6 +1126,7 @@ li.slick-active button {
   color: #FFFFFF;
   opacity: 0.6;
   padding: 16px;
+  font-size: 14px;
   margin: 10px 0 25px;
   width: 260px;
   border: 2px solid #FFFFFF;
@@ -1138,37 +1142,165 @@ li.slick-active button {
 
 @media (min-width: 765px) {
   .contact__body {
-    width: 560px;
-    padding: 8%;
+    width: 640px;
+    padding: 55px;
     font-size: 16px;
     line-height: 24px;
   }
   .form__body {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
+    flex-direction: row;
     margin: 40px 0 120px;
     color: #FFFFFF;
   }
-  .form__desc {
-    width: 50%;
+  .form__input {
+    width: 45%;
+  }
+  .form__input:nth-child(5) {
+    width: 100%;
+    padding-right: 25px;
+  }
+  .form__input:nth-child(even) {
+    margin-left: 45px;
   }
   .form__text {
     background-color: #181818;
     color: #FFFFFF;
-    opacity: 0.6;
+    opacity: 1;
     padding: 16px;
     margin: 10px 0 25px;
-    width: 260px;
-    border: 2px solid #FFFFFF;
+    width: 255px;
+    border: 2px solid rgba(255, 255, 255, 0.5215686275);
     border-radius: 5px;
   }
   .form #help {
     height: 140px;
+    width: 107%;
     resize: none;
   }
   .form__button {
     width: 200px;
+  }
+}
+.about-list__body {
+  padding: 8%;
+  margin: 10% 0;
+}
+.about-list__desc {
+  border: 1px solid #51026C;
+  -o-border-image: linear-gradient(90deg, #300ED2 10%, #D501FF 90%);
+     border-image: linear-gradient(90deg, #300ED2 10%, #D501FF 90%);
+  border-image-slice: 1;
+  border-radius: 2%;
+  padding: 25px;
+  font-size: 16px;
+  opacity: 0.8;
+}
+
+.about__body {
+  padding: 8%;
+  margin-bottom: 170px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.about__big-img {
+  display: none;
+  width: 100%;
+}
+.about__big-block {
+  width: 100%;
+  margin-bottom: 70px;
+}
+.about__block {
+  width: 100%;
+  margin-bottom: 70px;
+}
+.about__img {
+  width: 100%;
+}
+
+@media (min-width: 600px) {
+  .about-list__body {
+    display: flex;
+    margin: 10% 0 0%;
+    padding: 8% 8% 0%;
+  }
+  .about-list__block {
+    width: 70%;
+  }
+  .about-list__block:first-child {
+    width: 30%;
+  }
+  .about-list__desc {
+    font-size: 20px;
+    line-height: 36px;
+  }
+  .about__body {
+    padding: 8%;
+    margin-bottom: 30px;
+  }
+}
+@media (min-width: 765px) {
+  .about-list__body {
+    display: flex;
+    margin: 10% 0;
+    padding: 8%;
+  }
+  .about-list__block {
+    width: 50%;
+  }
+  .about-list__block:first-child {
+    width: 50%;
+  }
+  .about-list__desc {
+    font-size: 20px;
+    line-height: 36px;
+  }
+}
+@media (min-width: 1023px) {
+  .about-list__body {
+    display: flex;
+    margin: 6% 0 15%;
+    padding: 8%;
+  }
+  .about-list__desc {
+    font-size: 20px;
+    line-height: 36px;
+  }
+  .about__body {
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .about__big-img {
+    display: block;
+    width: 100%;
+  }
+  .about__big-block {
+    width: 100%;
+    margin-bottom: 70px;
+  }
+  .about__block {
+    width: 49%;
+    margin-bottom: 70px;
+  }
+  .about__block:nth-child(even) {
+    margin-right: 15px;
+  }
+  .about__img {
+    width: 100%;
+  }
+}
+@media (min-width: 1439px) {
+  .about-list__body {
+    display: flex;
+    margin: 6% 0 0;
+    padding: 8%;
+  }
+  .about-list__desc {
+    font-size: 32px;
+    line-height: 48px;
+    padding-right: 25%;
   }
 }
 .scroll-lock {
@@ -1182,7 +1314,15 @@ li.slick-active button {
   line-height: 46px;
 }
 
+.title-serv {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 10%;
+  line-height: 46px;
+}
+
 .button {
+  cursor: pointer;
   border: 1px solid #300ED2;
   -o-border-image: linear-gradient(90deg, #300ED2 10%, #D501FF 90%);
      border-image: linear-gradient(90deg, #300ED2 10%, #D501FF 90%);
@@ -1234,6 +1374,10 @@ li.slick-active button {
   margin-bottom: 15px;
 }
 
+.link {
+  color: #FFFFFF;
+}
+
 @media (min-width: 599px) {
   .title {
     margin-bottom: 7%;
@@ -1247,6 +1391,12 @@ li.slick-active button {
   .title {
     margin-bottom: 7%;
     font-size: 36px;
+  }
+  .title-serv {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 10%;
+    line-height: 46px;
   }
   .logo {
     font-size: 20px;
