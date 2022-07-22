@@ -563,7 +563,6 @@ li.slick-active button {
 
 .services__body {
   padding: 7%;
-  position: relative;
 }
 .services__title-main {
   font-size: 36px;
@@ -573,10 +572,6 @@ li.slick-active button {
   margin: 20% 0 12% 0;
 }
 
-.service {
-  position: -webkit-sticky;
-  position: sticky;
-}
 .service__body {
   margin: 12% 0;
 }
@@ -586,7 +581,6 @@ li.slick-active button {
   line-height: 36px;
 }
 .service__info {
-  top: 35px;
   width: 100%;
   border: 3px solid #51026C;
   -o-border-image: linear-gradient(90deg, #300ED2 10%, #D501FF 90%);
@@ -963,6 +957,7 @@ li.slick-active button {
   flex-wrap: wrap;
   padding: 7%;
   font-size: 14px;
+  border-top: 2px solid rgba(60, 60, 60, 0.6705882353);
 }
 .footer__desc {
   margin-bottom: 5%;
@@ -1106,6 +1101,74 @@ li.slick-active button {
   }
   .footer__contact {
     margin-top: 15px;
+  }
+}
+.contact__body {
+  padding: 8%;
+  font-size: 16px;
+  line-height: 24px;
+}
+.contact__desc {
+  text-align: justify;
+}
+
+.form__body {
+  display: flex;
+  flex-direction: column;
+  margin: 40px 0 120px;
+  color: #FFFFFF;
+}
+.form__text {
+  background-color: #181818;
+  color: #FFFFFF;
+  opacity: 0.6;
+  padding: 16px;
+  margin: 10px 0 25px;
+  width: 260px;
+  border: 2px solid #FFFFFF;
+  border-radius: 5px;
+}
+.form #help {
+  height: 140px;
+  resize: none;
+}
+.form__button {
+  width: 200px;
+}
+
+@media (min-width: 765px) {
+  .contact__body {
+    width: 560px;
+    padding: 8%;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .form__body {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 40px 0 120px;
+    color: #FFFFFF;
+  }
+  .form__desc {
+    width: 50%;
+  }
+  .form__text {
+    background-color: #181818;
+    color: #FFFFFF;
+    opacity: 0.6;
+    padding: 16px;
+    margin: 10px 0 25px;
+    width: 260px;
+    border: 2px solid #FFFFFF;
+    border-radius: 5px;
+  }
+  .form #help {
+    height: 140px;
+    resize: none;
+  }
+  .form__button {
+    width: 200px;
   }
 }
 .scroll-lock {

@@ -62,33 +62,40 @@
       <div class="contact">
          <div class="container">
             <div class="contact__body">
-               <div class="contact__title">Have a question?</div>
+               <div class="contact__title title">Have a question?</div>
                <p class="contact__desc">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
                   officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
                <div class="contact__form">
                   <form class="form" action="">
-                     <div class="form__input">
-                        <div class="form__desc">Firsrt Name*</div>
-                        <input type="text" name="fName" id="firstName">
+                     <div class="form__body">
+                        <div class="form__input">
+                           <div class="form__desc">Firsrt Name*</div>
+                           <input class="form__text" placeholder="Your First Name" type="text" name="fName"
+                              id="firstName">
+                        </div>
+                        <div class="form__input">
+                           <div class="form__desc">Last Name*</div>
+                           <input class="form__text" placeholder="Your Last Name" type="text" name="lName"
+                              id="lastName">
+                        </div>
+                        <div class="form__input">
+                           <div class="form__desc">Email*</div>
+                           <input class="form__text" placeholder="example@email.com" type="text" name="email"
+                              id="Email">
+                        </div>
+                        <div class="form__input">
+                           <div class="form__desc">Phone Number*</div>
+                           <input class="form__text" placeholder="000 00 00 00-0" type="text" name="pNum"
+                              id="phoneNumber">
+                        </div>
+                        <div class="form__input">
+                           <div class="form__desc">How can I help you?</div>
+                           <textarea class="form__text" placeholder="Enter message here" name="help" id="help" rows="4"
+                              cols="25"></textarea>
+                        </div>
+                        <button type="button" name="send" class="form__button button-filled">Send Message<img
+                              class="icon" src="IMG/icons/zoom_icon.svg" alt=""></button>
                      </div>
-                     <div class="form__input">
-                        <div class="form__desc">Last Name*</div>
-                        <input type="text" name="lName" id="lastName">
-                     </div>
-                     <div class="form__input">
-                        <div class="form__desc">Email*</div>
-                        <input type="text" name="email" id="Email">
-                     </div>
-                     <div class="form__input">
-                        <div class="form__desc">Phone Number*</div>
-                        <input type="text" name="pNum" id="phoneNumber">
-                     </div>
-                     <div class="form__input">
-                        <div class="form__desc">How can I help you?</div>
-                        <input type="text" name="help" id="help">
-                     </div>
-                     <button type="button" name="send" class="form__button button-filled">Send Message<img class="icon"
-                           src="IMG/icons/zoom_icon.svg" alt=""></button>
                   </form>
                </div>
             </div>
