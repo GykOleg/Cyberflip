@@ -3,6 +3,11 @@
       padding: 8%;
       margin: 10% 0;
    }
+   &__title{
+      font-size: 32px;
+      font-weight: 700;
+      margin-bottom: 45px;
+   }
    &__list{
       border: 1px solid #51026C;
       border-image: linear-gradient(90deg, #300ED2 10%, #D501FF 90%);;
@@ -11,5 +16,197 @@
       padding: 25px;
       font-size: 16px;
       opacity: 0.8;
+   }
+}
+.services-block{
+   &__body{
+      padding: 5%;
+   }
+}
+
+.desc{
+   margin-bottom: 50px;
+}
+.info-block{
+   &__body{
+      border: 3px solid #51026C;
+      border-image: linear-gradient(90deg, #300ED2 10%, #D501FF 90%);;
+      border-image-slice: 1;
+      border-radius: 2%;
+      padding: 32px;
+      margin: 0 0 15px;
+      background-color: $main-color;
+   }
+   &__title{
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 15px;
+   }
+}
+.ready{
+   &__body{
+      padding: 5%;
+      margin: 10% 0 25%;
+   }
+   &__title{
+      font-size: 32px;
+      font-weight: 700;
+      margin: 45px 0;
+   }
+}
+
+@media(min-width: 765px){
+   .service-list{
+      &__body{
+         display: flex;
+      }
+      &__title{
+         font-size: 48px;
+      }
+      &__block{
+         width: 50%;
+      }
+   }
+   .blockchain{
+      &__information{
+         width: 100%;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         & .info-block:nth-child(1){
+            align-self: flex-start;
+            z-index: 1;
+         }
+         & .info-block:nth-child(2){
+            z-index: 2;
+         }
+         & .info-block:nth-child(3){
+            align-self: flex-end;
+            z-index: 3;
+         }
+      }
+   }
+   .iot{
+      &__information{
+         width: 100%;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         & .info-block:nth-child(1){
+            align-self: flex-end;
+            z-index: 1;
+         }
+         & .info-block:nth-child(2){
+            z-index: 2;
+         }
+         & .info-block:nth-child(3){
+            align-self: flex-start;
+            z-index: 3;
+         }
+      }
+   }
+   .research{
+      &__information{
+         width: 100%;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         & .info-block:nth-child(1){
+            align-self: flex-start;
+            z-index: 1;
+         }
+         & .info-block:nth-child(2){
+            z-index: 2;
+         }
+         & .info-block:nth-child(3){
+            align-self: flex-end;
+            z-index: 3;
+         }
+      }
+   }
+   .devops{
+      &__information{
+         width: 100%;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         & .info-block:nth-child(1){
+            align-self: flex-start;
+            z-index: 1;
+         }
+         & .info-block:nth-child(2){
+            align-self: flex-start;
+            margin-left: 7%;
+            z-index: 2;
+         }
+         & .info-block:nth-child(3){
+            z-index: 3;
+         }
+         & .info-block:nth-child(4){
+            align-self: flex-end;
+            margin-right: 7%;
+            z-index: 4;
+         }
+         & .info-block:nth-child(5){
+            align-self: flex-end;
+            z-index: 5;
+         }
+      }
+   }
+   .info-block{
+      &__body{
+         width: 545px;
+         padding: 32px;
+         margin: 0 0 -15px;
+      }
+      &__title{
+         font-size: 22px;
+         line-height: 48px;
+         font-weight: 400;
+         margin-bottom: 15px;
+      }
+   }
+   .desc{
+      width: 545px;
+      margin-bottom: 50px;
+   }
+}
+@media(min-width: 900px){
+   .devops{
+      &__information{
+         width: 100%;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         & .info-block:nth-child(1){
+            align-self: flex-start;
+            z-index: 1;
+         }
+         & .info-block:nth-child(2){
+            align-self: flex-start;
+            margin-left: 10%;
+            z-index: 2;
+         }
+         & .info-block:nth-child(3){
+            z-index: 3;
+         }
+         & .info-block:nth-child(4){
+            align-self: flex-end;
+            margin-right: 10%;
+            z-index: 4;
+         }
+         & .info-block:nth-child(5){
+            align-self: flex-end;
+            z-index: 5;
+         }
+      }
+   }
+}
+@media(min-width: 1023px){
+   .service-list{
+      &__body{
+         padding: 8%;
+         margin: 3% 0 8%;
+      }
    }
 }

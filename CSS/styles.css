@@ -1308,6 +1308,11 @@ li.slick-active button {
   padding: 8%;
   margin: 10% 0;
 }
+.service-list__title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 45px;
+}
 .service-list__list {
   border: 1px solid #51026C;
   -o-border-image: linear-gradient(90deg, #300ED2 10%, #D501FF 90%);
@@ -1319,6 +1324,179 @@ li.slick-active button {
   opacity: 0.8;
 }
 
+.services-block__body {
+  padding: 5%;
+}
+
+.desc {
+  margin-bottom: 50px;
+}
+
+.info-block__body {
+  border: 3px solid #51026C;
+  -o-border-image: linear-gradient(90deg, #300ED2 10%, #D501FF 90%);
+     border-image: linear-gradient(90deg, #300ED2 10%, #D501FF 90%);
+  border-image-slice: 1;
+  border-radius: 2%;
+  padding: 32px;
+  margin: 0 0 15px;
+  background-color: #0B0B0B;
+}
+.info-block__title {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.ready__body {
+  padding: 5%;
+  margin: 10% 0 25%;
+}
+.ready__title {
+  font-size: 32px;
+  font-weight: 700;
+  margin: 45px 0;
+}
+
+@media (min-width: 765px) {
+  .service-list__body {
+    display: flex;
+  }
+  .service-list__title {
+    font-size: 48px;
+  }
+  .service-list__block {
+    width: 50%;
+  }
+  .blockchain__information {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .blockchain__information .info-block:nth-child(1) {
+    align-self: flex-start;
+    z-index: 1;
+  }
+  .blockchain__information .info-block:nth-child(2) {
+    z-index: 2;
+  }
+  .blockchain__information .info-block:nth-child(3) {
+    align-self: flex-end;
+    z-index: 3;
+  }
+  .iot__information {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .iot__information .info-block:nth-child(1) {
+    align-self: flex-end;
+    z-index: 1;
+  }
+  .iot__information .info-block:nth-child(2) {
+    z-index: 2;
+  }
+  .iot__information .info-block:nth-child(3) {
+    align-self: flex-start;
+    z-index: 3;
+  }
+  .research__information {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .research__information .info-block:nth-child(1) {
+    align-self: flex-start;
+    z-index: 1;
+  }
+  .research__information .info-block:nth-child(2) {
+    z-index: 2;
+  }
+  .research__information .info-block:nth-child(3) {
+    align-self: flex-end;
+    z-index: 3;
+  }
+  .devops__information {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .devops__information .info-block:nth-child(1) {
+    align-self: flex-start;
+    z-index: 1;
+  }
+  .devops__information .info-block:nth-child(2) {
+    align-self: flex-start;
+    margin-left: 7%;
+    z-index: 2;
+  }
+  .devops__information .info-block:nth-child(3) {
+    z-index: 3;
+  }
+  .devops__information .info-block:nth-child(4) {
+    align-self: flex-end;
+    margin-right: 7%;
+    z-index: 4;
+  }
+  .devops__information .info-block:nth-child(5) {
+    align-self: flex-end;
+    z-index: 5;
+  }
+  .info-block__body {
+    width: 545px;
+    padding: 32px;
+    margin: 0 0 -15px;
+  }
+  .info-block__title {
+    font-size: 22px;
+    line-height: 48px;
+    font-weight: 400;
+    margin-bottom: 15px;
+  }
+  .desc {
+    width: 545px;
+    margin-bottom: 50px;
+  }
+}
+@media (min-width: 900px) {
+  .devops__information {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .devops__information .info-block:nth-child(1) {
+    align-self: flex-start;
+    z-index: 1;
+  }
+  .devops__information .info-block:nth-child(2) {
+    align-self: flex-start;
+    margin-left: 10%;
+    z-index: 2;
+  }
+  .devops__information .info-block:nth-child(3) {
+    z-index: 3;
+  }
+  .devops__information .info-block:nth-child(4) {
+    align-self: flex-end;
+    margin-right: 10%;
+    z-index: 4;
+  }
+  .devops__information .info-block:nth-child(5) {
+    align-self: flex-end;
+    z-index: 5;
+  }
+}
+@media (min-width: 1023px) {
+  .service-list__body {
+    padding: 8%;
+    margin: 3% 0 8%;
+  }
+}
 .scroll-lock {
   overflow: hidden;
 }
@@ -1333,7 +1511,7 @@ li.slick-active button {
 .title-serv {
   font-size: 24px;
   font-weight: 700;
-  margin-bottom: 10%;
+  margin: 10% 0;
   line-height: 46px;
 }
 
@@ -1416,6 +1594,9 @@ li.slick-active button {
   }
   .logo {
     font-size: 20px;
+  }
+  .title-serv {
+    margin: 80px 0 20px;
   }
 }
 @media (min-width: 1023px) {
