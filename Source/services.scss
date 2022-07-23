@@ -1,0 +1,78 @@
+.service-list{
+   &__body{
+      padding: 8%;
+      margin: 10% 0;
+   }
+   &__list{
+      border: 1px solid #51026C;
+      border-image: linear-gradient(90deg, #300ED2 10%, #D501FF 90%);;
+      border-image-slice: 1;
+      border-radius: 2%;
+      padding: 25px;
+      font-size: 16px;
+      opacity: 0.8;
+   }
+}
+.works-slider .slick{
+   &-list{
+      overflow: hidden;
+   }
+   &-track{
+      display: flex;
+      align-items: center;
+   }
+   &-slide{
+      width: 100%;
+      padding: 40px 2% 0;
+      font-size: 12px;
+   }
+   &-dots{
+      display: none;
+      align-items: center;
+      justify-content: center;
+      & li{
+         list-style: none;
+      }
+      & button{
+         font-size: 0px;
+         width: 10px;
+         height: 10px;
+         background-color: $font-color;
+         border-radius: 50%;
+         margin: 15px;
+      }
+   }
+}
+li.slick-active button{
+   opacity: 0.54;
+}
+
+.works-slider{
+   position: relative;
+   margin: 2% 2% 20%;
+   padding-bottom: 30px;
+   & .slick-arrow{
+      position: absolute;
+      z-index: 5;
+      height: 18px;
+      width: 18px;
+      font-size: 0px;
+      top: 50%;
+      background-color: #2f0ed200;
+      opacity: 0.8;
+   }
+   & .slick-prev{
+      background-image: url("../IMG/icons/arrowLeft.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      left: 2%;
+   }
+   & .slick-next{
+      background-image: url("../IMG/icons/arrowRight.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      right: 2%;
+   }
+}

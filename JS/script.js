@@ -18,6 +18,9 @@ $(function () {
    $(".slider").slick({
       dots: true
    });
+   $(".works-slider").slick({
+      dots: true
+   });
    //adaptive spoiler
    if (window.matchMedia('all and (max-width: 900px').matches) {
       $(".footer__title-small").click(function () {
