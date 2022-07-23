@@ -15,18 +15,25 @@ $(function () {
       $(".mobile-menu__body").slideToggle(500);
    });
    //slider
-   $(".slider").slick({
-      dots: true
+   const Resize = () => {
+      if ($(window).width() > 900) {
+         $(".slider").slick({
+            dots: true
+         });
+         $(".works-slider").slick({
+            dots: true
+         });
+      } else {
+         $(".slider").slick();
+         $(".works-slider").slick();
+         $(".footer__title-small").click(function () {
+            $(this).toggleClass("active").next().slideToggle(500);
+         });
+      };
+      console.log($(window).width());
+   };
+   Resize();
+   $(window).on('resize', function () {
+      Resize();
    });
-   $(".works-slider").slick({
-      dots: true
-   });
-   //adaptive spoiler
-   if (window.matchMedia('all and (max-width: 900px').matches) {
-      $(".footer__title-small").click(function () {
-         $(this).toggleClass("active").next().slideToggle(500);
-      });
-   }
-   //stiky services
-
 });

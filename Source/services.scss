@@ -23,6 +23,41 @@
       padding: 5%;
    }
 }
+.works-slider{
+   & .slick{
+      &-slide{
+         width: 100%;
+         padding: 0;
+         font-size: 12px;
+      }
+   }
+   position: relative;
+   margin: 10% 2% 0;
+   & .slick-arrow{
+      position: absolute;
+      z-index: 5;
+      height: 18px;
+      width: 18px;
+      font-size: 0px;
+      top: 50%;
+      background-color: #2f0ed200;
+      opacity: 0.8;
+   }
+   & .slick-prev{
+      background-image: url("../IMG/icons/arrowLeft.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      left: 2%;
+   }
+   & .slick-next{
+      background-image: url("../IMG/icons/arrowRight.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      right: 2%;
+   }
+}
 
 .desc{
    margin-bottom: 50px;
@@ -66,6 +101,20 @@
       &__block{
          width: 50%;
       }
+   }
+   .works-slider{
+      & .slick{
+         &-slide{
+            width: 100%;
+            padding: 0 65px;
+            font-size: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+         }
+      }
+      position: relative;
+      margin: 10% 3% 0;
    }
    .blockchain{
       &__information{
@@ -172,6 +221,33 @@
    }
 }
 @media(min-width: 900px){
+   .works-slider{
+      & .slick-dots{
+         margin-top: 15px;
+      }
+      & .slick-arrow{
+         height: 15px;
+         width: 15px;
+         top: 100%;
+         background-color: #2f0ed200;
+         opacity: 0.54;
+         margin: -25px -80px;
+      }
+      & .slick-prev{
+         background-image: url("../IMG/icons/arrowLeft.svg");
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: contain;
+         left: 50%;
+      }
+      & .slick-next{
+         background-image: url("../IMG/icons/arrowRight.png");
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: contain;
+         right: 50%;
+      }
+   }
    .devops{
       &__information{
          width: 100%;
