@@ -1319,69 +1319,6 @@ li.slick-active button {
   opacity: 0.8;
 }
 
-.works-slider .slick-list {
-  overflow: hidden;
-}
-.works-slider .slick-track {
-  display: flex;
-  align-items: center;
-}
-.works-slider .slick-slide {
-  width: 100%;
-  padding: 40px 2% 0;
-  font-size: 12px;
-}
-.works-slider .slick-dots {
-  display: none;
-  align-items: center;
-  justify-content: center;
-}
-.works-slider .slick-dots li {
-  list-style: none;
-}
-.works-slider .slick-dots button {
-  font-size: 0px;
-  width: 10px;
-  height: 10px;
-  background-color: #FFFFFF;
-  border-radius: 50%;
-  margin: 15px;
-}
-
-li.slick-active button {
-  opacity: 0.54;
-}
-
-.works-slider {
-  position: relative;
-  margin: 2% 2% 20%;
-  padding-bottom: 30px;
-}
-.works-slider .slick-arrow {
-  position: absolute;
-  z-index: 5;
-  height: 18px;
-  width: 18px;
-  font-size: 0px;
-  top: 50%;
-  background-color: rgba(47, 14, 210, 0);
-  opacity: 0.8;
-}
-.works-slider .slick-prev {
-  background-image: url("../IMG/icons/arrowLeft.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  left: 2%;
-}
-.works-slider .slick-next {
-  background-image: url("../IMG/icons/arrowRight.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  right: 2%;
-}
-
 .scroll-lock {
   overflow: hidden;
 }
