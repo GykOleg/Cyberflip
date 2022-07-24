@@ -13,40 +13,46 @@
       width: 240px;
       text-align: center;
    }
+   &__blocks{
+      display: flex;
+      flex-wrap: nowrap;
+   }
    &__info{
-      width: 50%;
-      position: relative;
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
+      width: 100%;
    }
    &__images{
+      display: none;
       width: 50%;
+      justify-content: space-between;
+      flex-direction: column;
    }
-   & .service:nth-child(1){
+
+   &__info .service:nth-child(1){
       position: sticky;
-      top: 0;
+      top: 20px;
       z-index: 1;
    }
-   & .service:nth-child(2){
+   &__info .service:nth-child(2){
       position: sticky;
-      top: 100px;
+      top: 110px;
       z-index: 2;
    }
-   & .service:nth-child(3){
+   &__info .service:nth-child(3){
       position: sticky;
       top: 200px;
       z-index: 3;
    }
-   & .service:nth-child(4){
+   &__info .service:nth-child(4){
       position: sticky;
-      top: 300px;
+      top: 280px;
       z-index: 4;
    }
 }
 .service{
    &__body{
-      margin: 5% 0;
+      margin: 70px 0;
       background-color: $main-color;
    }
    &__title{
@@ -60,16 +66,15 @@
       border-image: linear-gradient(90deg, #300ED2 10%, #D501FF 90%);;
       border-image-slice: 1;
       border-radius: 2%;
-      padding: 8%;
+      padding: 30px;
    }
    &__list{
-      padding: 2%;
       opacity: 0.8;
       line-height: 24px;
-      margin-bottom: 15px;
+      margin-bottom: 30px;
    }
    &__item{
-      margin: 6% 6%;
+      margin: 18px 6%;
       &::before{
          content: "–";
          display: inline-block;
@@ -84,10 +89,10 @@
    &__img-block{
       width: 100%;
       height: 100%;
+      margin-top: -35px;
    }
    &__img{
-      width: 100%;
-      height: 100%;
+      height: 350px;
    }
 }
 .summary{
@@ -127,6 +132,7 @@
    }
 }
 .achivement{
+   width: 100%;
    &__body{
       margin: 0 auto;
    }
@@ -161,38 +167,6 @@
    }
 }
 @media (min-width: 765px){
-   .service{
-      &__body{
-         margin: 0 0 70px;
-         background-color: $main-color;
-      }
-      &__info{
-         width: 100%;
-         border: 3px solid #51026C;
-         border-image: linear-gradient(90deg, #300ED2 10%, #D501FF 90%);;
-         border-image-slice: 1;
-         border-radius: 2%;
-         padding: 6%;
-      }
-      &__list{
-         padding: 0 2%;
-         opacity: 0.8;
-         line-height: 24px;
-         margin-bottom: 35px;
-      }
-      &__item{
-         margin: 3% 2%;
-         &::before{
-            content: "–";
-            display: inline-block;
-            width: 15px;
-            margin-left: -15px;
-         }
-      }
-      &__button{
-         font-size: 14px;
-      }
-   }
    .summary{
       &__info{
          padding: 5% 5%;
@@ -225,7 +199,7 @@
    .achivement{
       width: 50%;
       &__body{
-         text-align: left;
+         text-align: center;
       }
       &__title-img{
          margin: 10% 0;
@@ -235,85 +209,10 @@
 @media (min-width: 900px){
    .services{
       &__info{
-         width: 45%;
-         position: relative;
-         display: flex;
-         flex-direction: column;
-         justify-content: space-between;
+         width: 50%;
       }
       &__images{
-         width: 45%;
          display: flex;
-         flex-direction: column;
-         justify-content: space-between;
-      }
-   }
-   .service{
-      &__body{
-         margin: 0 0 70px;
-         background-color: $main-color;
-      }
-      &__info{
-         width: 50%;
-         border: 3px solid #51026C;
-         border-image: linear-gradient(90deg, #300ED2 10%, #D501FF 90%);;
-         border-image-slice: 1;
-         border-radius: 2%;
-         padding: 30px;
-      }
-      &__list{
-         padding: 0 2%;
-         opacity: 0.8;
-         line-height: 24px;
-         margin-bottom: 35px;
-      }
-      &__item{
-         margin: 3% 2%;
-         &::before{
-            content: "–";
-            display: inline-block;
-            width: 15px;
-            margin-left: -15px;
-         }
-      }
-      &__button{
-         font-size: 14px;
-      }
-   }
-   .services{
-      &__info{
-         width: 100%;
-         position: relative;
-         display: flex;
-         flex-direction: column;
-         justify-content: space-between;
-      }
-      &__images{
-         width: 50%;
-         position: relative;
-         display: none;
-         flex-direction: column;
-         justify-content: space-between;
-      }
-      & .service:nth-child(1){
-         position: sticky;
-         top: 20px;
-         z-index: 1;
-      }
-      & .service:nth-child(2){
-         position: sticky;
-         top: 100px;
-         z-index: 2;
-      }
-      & .service:nth-child(3){
-         position: sticky;
-         top: 180px;
-         z-index: 3;
-      }
-      & .service:nth-child(4){
-         position: sticky;
-         top: 280px;
-         z-index: 4;
       }
    }
    .summary{
@@ -337,7 +236,7 @@
    }
    .achivements{
       &__body{
-         padding: 10% 5%;
+         padding: 6% 5%;
       }
       &__title{
          margin-bottom: 3%;
@@ -346,7 +245,7 @@
    .achivement{
       width: 50%;
       &__body{
-         text-align: left;
+         text-align: center;
       }
       &__title-img{
          margin: 10% 0;
@@ -392,10 +291,11 @@
       }
       &__title-img{
          height: 120px;
-         width: 240px;
+         width: 200px;
       }
    }
 }
+
 @media(min-width: 1439px)
 {
    .summary{

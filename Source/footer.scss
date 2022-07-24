@@ -147,14 +147,14 @@
       &__place{
          display: flex;
          justify-content: space-between;
-         align-items: flex-end;
+         align-items: center;
          margin-top: 25px;
          padding-right: 8%;
          width: 100%;
          line-height: 30px;
       }
       &__contact{
-         margin-top: 15px;
+         line-height: 20px;
       }
    }
 }
